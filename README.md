@@ -4,7 +4,7 @@ This project aims to predict **Apple Inc. (AAPL)** stock prices using historical
 
 ---
 
-## 🧹 1. Data Cleaning & Preprocessing
+## 1. Data Cleaning & Preprocessing
 
 * **Data Source:** Historical AAPL stock data retrieved via *Yahoo Finance API (yfinance)*.
 * **Initial Steps:**
@@ -21,7 +21,7 @@ This project aims to predict **Apple Inc. (AAPL)** stock prices using historical
 
 ---
 
-## 📈 2. Statistical Analysis & Stationarity Tests
+## 2. Statistical Analysis & Stationarity Tests
 
 Before building predictive models, the time series was examined for **volatility**, **stationarity**, and **autocorrelation**:
 
@@ -52,7 +52,7 @@ Before building predictive models, the time series was examined for **volatility
 
 ---
 
-## ⚙️ 3. Feature Engineering
+## 3. Feature Engineering
 
 To help the model understand market dynamics, several **technical indicators** were added:
 
@@ -73,7 +73,7 @@ df['EMA_20'] = df['Close'].ewm(span=20, adjust=False).mean()
 
 ---
 
-## 🤖 4. Model Development
+## 4. Model Development
 
 * **Data Split:**
   80% training, 20% testing.
@@ -89,11 +89,12 @@ df['EMA_20'] = df['Close'].ewm(span=20, adjust=False).mean()
 
 ---
 
-## 📊 5. Results & Visualization
+## 5. Results & Visualization
 
 ### Prediction Graph
 
-![AAPL Stock Prediction](c28ae8ab-d9b1-4936-929a-24513d0197aa.png)
+AAPL Stock Prediction<img width="1165" height="624" alt="output" src="https://github.com/user-attachments/assets/99938675-0f7e-4d0a-a964-fb6ce7a8a48b" />
+
 
 * **Blue:** Actual Train Price
 * **Orange:** Actual Test Price
